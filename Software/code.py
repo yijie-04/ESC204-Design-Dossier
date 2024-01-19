@@ -18,12 +18,12 @@ switch.direction = digitalio.Direction.INPUT
 switch.pull = digitalio.Pull.UP # Set internal pull-up resistor
 # Print a message on the serial console
 # print('Hello! My LED is controlled by the button.')
-# Loop so the code runs continuously
 last_state = button.value # initialize last button state variable
 last_switch = switch.value # initialize last switch button state variable
 state = 0 # initialize state of on/off button
 signal_edge = 0 # initialize button signal edge variable
 
+# Loop so the code runs continuously
 while True:
     signal_edge = 0 # set button signal edge to 0 by default
     if last_state != button.value: # check if a button signal edge occurs
