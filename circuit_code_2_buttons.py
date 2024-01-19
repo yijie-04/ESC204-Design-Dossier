@@ -17,7 +17,7 @@ switch = digitalio.DigitalInOut(board.GP14)
 switch.direction = digitalio.Direction.INPUT
 switch.pull = digitalio.Pull.UP # Set internal pull-up resistor
 # Print a message on the serial console
-print('Hello! My LED is controlled by the button.')
+# print('Hello! My LED is controlled by the button.')
 # Loop so the code runs continuously
 last_state = button.value # initialize last button state variable
 last_switch = switch.value # initialize last switch button state variable
